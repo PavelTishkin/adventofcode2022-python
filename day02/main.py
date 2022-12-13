@@ -1,5 +1,3 @@
-from functools import reduce
-
 # A = rock; B = paper; C = scissors; X = rock; Y = paper; Z = scissors
 hand_list = ["A", "B", "C"]
 outcome_list = ["X", "Y", "Z"]
