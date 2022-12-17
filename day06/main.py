@@ -4,7 +4,7 @@ def main():
 
     print("Answer 1: {}".format(get_marker(file_lines[0], 4)))
 
-    print("Answer 1: {}".format(get_marker(file_lines[0], 14)))
+    print("Answer 2: {}".format(get_marker(file_lines[0], 14)))
 
 def get_marker(buffer, str_len):
     for i in range(0, len(buffer) - str_len + 1):
