@@ -9,6 +9,7 @@ outcome_value = {"X": 0, "Y": 3, "Z": 6}
 def main():
     input_file = open('input/day2.txt', 'r')
     file_lines = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
 
     games_list = []
     for line in file_lines:

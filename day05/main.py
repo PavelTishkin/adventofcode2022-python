@@ -3,6 +3,7 @@ import re
 def main():
     input_file = open('input/day5.txt', 'r')
     file_lines = list(map(lambda l: l.rstrip(), input_file.readlines()))
+    input_file.close()
     [crates, instructions] = parse_data(file_lines)
     move_all_crates(crates, instructions)
 

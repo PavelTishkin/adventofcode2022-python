@@ -75,6 +75,7 @@ class File:
 def main():
     input_file = open('input/day7.txt', 'r')
     terminal_lines = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
     root_dir = parse_fs(terminal_lines)
 
     print("Answer 1: {}".format(calc_dir_total_size_sum(root_dir, 100000)))

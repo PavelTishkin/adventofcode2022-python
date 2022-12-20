@@ -3,6 +3,7 @@ from functools import reduce
 def main():
     input_file = open('input/day1.txt', 'r')
     file_lines = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
 
     elf_calories = []
     current_elf_calories = []

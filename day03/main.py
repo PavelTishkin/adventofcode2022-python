@@ -5,6 +5,7 @@ priority = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def main():
     input_file = open('input/day3.txt', 'r')
     rucksack_contents = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
 
     print("Answer 1: {}".format(get_priorities_sum(rucksack_contents)))
 

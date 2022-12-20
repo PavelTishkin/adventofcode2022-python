@@ -35,6 +35,7 @@ class Tree:
 def main():
     input_file = open('input/day8.txt', 'r')
     trees_input = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
 
     trees_map = parse_tree_map(trees_input)
     mark_visible_trees(trees_map)

@@ -80,6 +80,7 @@ class Rope():
 def main():
     input_file = open('input/day9.txt', 'r')
     moves_input = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
 
     rope = process_moves(moves_input, 10)
     print("Answer 1: {}".format(rope.count_tail_visited_points(1)))

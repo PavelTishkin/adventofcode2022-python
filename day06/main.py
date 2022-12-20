@@ -1,6 +1,7 @@
 def main():
     input_file = open('input/day6.txt', 'r')
     file_lines = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
 
     print("Answer 1: {}".format(get_marker(file_lines[0], 4)))
 

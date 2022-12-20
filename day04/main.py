@@ -1,6 +1,7 @@
 def main():
     input_file = open('input/day4.txt', 'r')
     file_lines = list(map(lambda l: l.strip(), input_file.readlines()))
+    input_file.close()
     pair_assignments = get_all_assignments(file_lines)
 
     print("Answer 1: {}".format(get_contain_count(pair_assignments)))
